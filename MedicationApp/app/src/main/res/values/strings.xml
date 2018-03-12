@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ReMedicator</string>
+    <string name="new_medication">New Medication</string>
+    <string name="name">Name</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="dosage">Dosage</string>
+    <string name="reminder_times">Reminder Times</string>
+    <string name="keep_it_secret">Keep it Secret</string>
+    <string name="hide_details_on_notification">Hide Details on notification</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_24hr_clock">Use 24hr Clock</string>
+    <string name="_24_hr_time">24 hr time</string>
+    <string name="optional_time">Optional time</string>
+    <string name="daily_use">Daily Use</string>
+    <string name="weekly_use">Weekly Use</string>
+    <string name="time3">Time3</string>
+    <string name="time4">Time4</string>
+    <string name="frequency">Frequency</string>
+    <string name="time1">Time1</string>
+    <string name="time2">Time2</string>
+</resources>
