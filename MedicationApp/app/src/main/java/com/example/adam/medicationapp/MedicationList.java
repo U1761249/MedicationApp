@@ -11,9 +11,13 @@ public class MedicationList extends Medication {
 
  public ArrayList<Medication> getMedications() { return medications; }
 
- public void setPlayers(ArrayList<Medication> players) { this.medications = players; }
+ public int getLength(){return medications.size();}
+
+ public void setMedications(ArrayList<Medication> medications) { this.medications = medications; }
 
  public void addMedication(Medication medication){ medications.add(medication); }
+
+ public Medication getMedication(int index){return medications.get(index);}
 
  ArrayList<Medication> medications = new ArrayList<>();
 

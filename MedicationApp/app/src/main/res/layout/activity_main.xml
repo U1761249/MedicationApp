@@ -2,9 +2,14 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimary"
+    android:visibility="visible"
     tools:context="com.example.adam.medicationapp.MainActivity">
+    android:persistent="true"
+
 
     <Button
         android:id="@+id/button"
@@ -12,68 +17,29 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorAccent"
         android:onClick="newMessage"
         android:text="@string/new_medication"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="8dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TableLayout
-    android:layout_width="368dp"
-        android:layout_height="439dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+    <de.codecrafters.tableview.TableView
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+    </de.codecrafters.tableview.TableView>
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:text="@string/name" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/dosage" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time3" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time4" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/frequency" />
-        </TableRow>
-
-    </TableLayout>
 </android.support.constraint.ConstraintLayout>

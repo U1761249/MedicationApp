@@ -1,8 +1,10 @@
 package com.example.adam.medicationapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.icu.text.DateFormat;
 import android.icu.text.SimpleDateFormat;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -20,6 +22,8 @@ public class NewMedication extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_medication);
+        ConstraintLayout layout = findViewById(R.id.MainLayout2);
+        layout.setBackgroundColor(Color.parseColor("#4282d3"));
     }
     public void mainMessage(View view){
         startActivity(new Intent(NewMedication.this, MainActivity.class));}
@@ -54,9 +58,8 @@ public class NewMedication extends AppCompatActivity {
 
         MainActivity runActivity = new MainActivity();
         runActivity.medications.addMedication(new Medication(name, dose, time1, time2, time3, time4, weeklyUse, mediHide));
-        runActivity.updateTable();
         startActivity(new Intent(NewMedication.this, MainActivity.class));
-
+        runActivity.updateTable();
     }
 
 
